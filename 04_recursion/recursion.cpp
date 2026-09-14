@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 void countdown(int n){
     if (n <= 0){
@@ -20,10 +21,10 @@ void countup(int n){
 }
 
 double power(double base, int exp){
-    if (exp < 0){
+    if (exp > 0){
         return power(base,exp-1)*base;
     }
-    else if(exp > 0){
+    else if(exp < 0){
         return power(base,exp+1)/base;
     }
     else{
@@ -41,5 +42,5 @@ int main(){
     countdown(10);
     countup(10);
 
-    std::cout << power(2, 30);
+    std::cout << std::endl << power(2, 0) << std::endl;
 }
