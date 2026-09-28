@@ -4,13 +4,7 @@
 class Car {
 public:
     // No arg constructor
-    Car() {
-        make = "-";
-        model = "-";
-        year = 1900;
-        mpg = 0.0;
-    }
-
+    Car();
     // printInfo method
     void printInfo() const;
 
