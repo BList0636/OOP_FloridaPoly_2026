@@ -5,6 +5,8 @@ class Car {
 public:
     // No arg constructor
     Car();
+    Car(std::string _make, std::string _model, int _year, double _mpg);
+
     // printInfo method
     void printInfo() const;
 
