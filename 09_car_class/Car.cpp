@@ -25,19 +25,19 @@ void Car::printInfo() const {
 
 
 // Implement getters and setters
-std::string Car::getMake() const{
+const std::string Car::getMake(){
     return make;
 }
 
-std::string Car::getModel() const{
+const std::string Car::getModel(){
     return model;
 }
 
-int Car::getYear() const{
+const int Car::getYear() {
     return year;
 }
 
-double Car::getMPG() const{
+const double Car::getMPG() {
     return mpg;
 }
 

@@ -14,16 +14,16 @@ public:
     void printInfo() const;
 
     // Getters
-    std::string getMake() const;
-    std::string getModel() const;
-    int         getYear() const;
-    double      getMPG() const;
+    const std::string getMake();
+    const std::string getModel();
+    const int         getYear();
+    const double      getMPG();
 
     // Setters
-    void        setMake(const std::string& mk);
-    void        setModel(const std::string& md);
-    void        setYear(int y);
-    void        setMPG(double new_mpg);
+    void setMake (const std::string& mk);
+    void setModel(const std::string& md);
+    void setYear (int y);
+    void setMPG  (double new_mpg);
 
 private:
     std::string make;
