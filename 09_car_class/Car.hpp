@@ -1,4 +1,7 @@
 // .hpp header file. Keeps the description of the class. No implementation.
+#ifndef CAR_HPP
+
+#define CAR_HPP
 #include <string>
 
 class Car {
@@ -28,3 +31,5 @@ private:
     int year;
     double mpg;
 };
+
+#endif
