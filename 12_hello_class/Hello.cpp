@@ -11,10 +11,14 @@ public:
         (*this).size = size;
         std::cout << "One arg constructor for " << this << std::endl;
         (*this).messages = new std::string[size];
+        for(int i = 0;i < size; i++){
+            messages[i] = std::to_string(i);
+        }
     }
 
     ~Hello(){
         std::cout << "Destructor for " << this << std::endl;
+        delete messages;
     }
 
     void bye() const{
